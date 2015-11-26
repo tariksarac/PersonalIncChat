@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\personal\PersonalIncChat\PersonalIncChat\bin\PersonalIncChat.dll.config
+C:\Users\User\Desktop\personal\PersonalIncChat\PersonalIncChat\bin\PersonalIncChat.dll
+C:\Users\User\Desktop\personal\PersonalIncChat\PersonalIncChat\bin\PersonalIncChat.pdb
+C:\Users\User\Desktop\personal\PersonalIncChat\PersonalIncChat\obj\Debug\PersonalIncChat.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\personal\PersonalIncChat\PersonalIncChat\obj\Debug\PersonalIncChat.dll
+C:\Users\User\Desktop\personal\PersonalIncChat\PersonalIncChat\obj\Debug\PersonalIncChat.pdb
+C:\Users\User\Desktop\final\PersonalIncChat\PersonalIncChat\bin\PersonalIncChat.dll.config
+C:\Users\User\Desktop\final\PersonalIncChat\PersonalIncChat\bin\PersonalIncChat.dll
+C:\Users\User\Desktop\final\PersonalIncChat\PersonalIncChat\bin\PersonalIncChat.pdb
+C:\Users\User\Desktop\final\PersonalIncChat\PersonalIncChat\obj\Debug\PersonalIncChat.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\final\PersonalIncChat\PersonalIncChat\obj\Debug\PersonalIncChat.dll
+C:\Users\User\Desktop\final\PersonalIncChat\PersonalIncChat\obj\Debug\PersonalIncChat.pdb

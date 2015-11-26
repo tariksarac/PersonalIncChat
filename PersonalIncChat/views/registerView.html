@@ -1,0 +1,39 @@
+﻿<div class="row centered-form clearfix">
+    <div class="panel panel-default" id="register">
+        <div class="panel-heading">
+            <h3 class="panel-title">Please register for Personal Chat</h3>
+        </div>
+        <div class="panel-body">
+            <form role="form">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input ng-model="firstName" type="text" name="first_name" id="first_name" class="form-control input-sm floatlabel" placeholder="First Name" required>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input type="text" ng-model="lastName" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input ng-model="email" type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input ng-model="company" type="text" name="company" id="company" class="form-control input-sm" placeholder="Company">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input ng-model="city" type="text" name="city" id="city" class="form-control input-sm" placeholder="City">
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Register" class="btn btn-default btn-block" ng-click="addNick(firstName,lastName,email,company,city);changeView('/chat')">
+            </form>
+        </div>
+    </div>
+</div>

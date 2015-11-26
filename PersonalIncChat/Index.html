@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html ng-app="Chat">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--styles-->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="styles/CustomCSS.css" rel="stylesheet" />
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+    <!--scripts-->
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <!--controllers-->
+    <script src="app.js"></script>
+    <script src="controllers/RegisterCtrl.js"></script>
+    <script src="controllers/ChatCtrl.js"></script>
+    <!--services-->
+    <script src="services/DataService.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar-header">
+            <p class="navbar-brand">Personal chat</p>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-right">
+                <p ng-show="!(user == null)? true : false">Welcome {{user.firstName}}</p>
+                <a ng-show="(user == null)? true : false"><img class="img-responsive" id="personallogo" src="images/logo.png" ng-click="redirectToPersonal();" /></a>
+                <a class="btn btn-default" id="logout" ng-show="!(user == null)? true : false" href="#/register" ng-click="logOut()">Logout</a>
+            </form>
+        </div>
+    </div>
+    <div class="container" ng-view></div>
+</body>
+</html>

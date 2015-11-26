@@ -1,0 +1,52 @@
+﻿<div class="row centered-form clearfix">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="col-md-4" id="people-list-box">
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control" id="search" placeholder="Search for..." ng-model="search">
+                </div>
+                <br />
+                <div id="people-list">
+                    <div ng-repeat="member in members | filter: search | orderBy: 'id'">
+                        <a ng-click="ChatWith(member); "><span><img class="img-circle" src="images/default-avatar.png" alt="avatar" />{{member.name }}</span></a>
+                        <div class="status">
+                            <div class="status online" ng-if="(member.id < 4)"><i class="fa fa-circle online"></i> online</div>
+                            <div class="status offline" ng-if="member.id > 3"><i class="fa fa-circle offline"></i> offline</div>
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8" id="chat-box">
+                <div ng-if="!showHeader" class="chat-header clearfix">
+                    <a><img class="img-circle" ng-src="images/default-avatar.png" alt=" avatar" /></a>
+                    <div class="chat-about">
+                        <div class="chat-with">{{currentbuddy.name}}  from {{currentbuddy.company.name}}</div>
+                        <div class="chat-num-messages">already {{chat.length}} messages</div>
+                    </div>
+                </div>
+                <br />
+            </div>
+            <div ng-if="showHeader">
+                <img class="img-responsive" id="personal" src="images/Powered_by_Personal_Logo_positive.png" />
+            </div>
+            <div class="chat-history">
+                <div class="list-group" ng-repeat="x in chat ">
+                    <div class="message-data align-right">
+                        <span class="message-data-time">{{x.time | date:'medium'}}</span>
+                        <span class="message-data-name">{{x.currentbuddy}}</span>
+                    </div>
+                    <div class="{{x.myclass}}">{{x.text }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="Type your message here" ng-model="mymessage" ng-keypress="messageEnter($event,mymessage)">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" ng-click=" sendmessage(mymessage)">Send</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
